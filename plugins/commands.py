@@ -40,7 +40,7 @@ async def start(bot, message):
     else:
         buttons = [
             [
-                InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/new_ehi'),
+                InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/sl_bot_zone'),
                 InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
             ],
             [
@@ -95,7 +95,7 @@ async def total(bot, message):
     msg = await message.reply("Processing...⏳\nLeo Projects 🇱🇰", quote=True)
     try:
         total = await Media.count_documents()
-        await msg.edit(f'📁 Total files saved in Leo Media Search Bots Database: {total}')
+        await msg.edit(f'📁 Total files saved in  Media Search Bots Database: {total}')
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
@@ -123,7 +123,7 @@ async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
     if reply and reply.media:
-        msg = await message.reply("Processing...⏳\nLeo Projects 🇱🇰", quote=True)
+        msg = await message.reply("Processing...⏳\n@slbotzone Projects 🇱🇰", quote=True)
     else:
         await message.reply('Reply to file with /delete which you want to delete', quote=True)
         return
