@@ -60,7 +60,7 @@ async def answer(bot, query):
                            next_offset=str(next_offset))
     else:
 
-        switch_pm_text = f'{emoji.CROSS_MARK} No Media Found in Leo Media Search Bot🙁'
+        switch_pm_text = f'{emoji.CROSS_MARK} No Media Found in  Media Search Bot🙁'
         if string:
             switch_pm_text += f' for "{string}"'
 
@@ -79,8 +79,8 @@ def get_reply_markup(username, query):
         ],
 
         [
-           InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/new_ehi'),
-           InlineKeyboardButton('Rate us ★', url='https://t.me/tlgrmcbot?start=leoinlinesearchbot-review'),
+           InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/sl_bot_zone'),
+           InlineKeyboardButton('Subscribe me ★', url='https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA'),
         ],
     ]
     return InlineKeyboardMarkup(buttons)
